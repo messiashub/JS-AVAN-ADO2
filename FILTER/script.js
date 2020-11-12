@@ -1,7 +1,5 @@
 // Filter
 
-
-
 function novoAluno(nome, idade){
     return{nome, idade}
 }
@@ -23,3 +21,15 @@ function Maior30(aluno){
 let alunos30 = alunos.filter(Maior30);
 
 console.log(alunos30);
+
+/////////////////
+
+let numeros = [1,2,3,4,5,6,7,8,9]
+
+function impar(n){
+    res = n % 2 == 0;
+    return res;
+}
+
+let numeroImpar = numeros.filter(impar);
+console.log(numeroImpar);
